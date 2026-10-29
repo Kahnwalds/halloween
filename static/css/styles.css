@@ -5,9 +5,17 @@
 body {
     margin: 0;
     padding: 40px 16px;
+    min-height: 100vh;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #1b1b24;
     color: #ececf1;
+    background-color: #1b1b24;
+    background-image:
+        linear-gradient(rgba(27, 27, 36, 0.6), rgba(27, 27, 36, 0.6)),
+        url("/static/img/halloweenbgpage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -28,7 +36,8 @@ form {
     align-items: flex-end;
     padding: 20px;
     margin-bottom: 24px;
-    background: #262633;
+    background: rgba(38, 38, 51, 0.85);
+    backdrop-filter: blur(4px);
     border-radius: 10px;
 }
 
@@ -74,7 +83,7 @@ button:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    background: #262633;
+    background: rgba(38, 38, 51, 0.85);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -91,5 +100,5 @@ th {
 }
 
 tr:nth-child(even) td {
-    background: #2e2e3d;
+    background: rgba(46, 46, 61, 0.85);
 }
